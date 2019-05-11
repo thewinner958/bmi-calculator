@@ -29,6 +29,7 @@ Partial Class frmBMI
         Me.txtHeight = New System.Windows.Forms.TextBox()
         Me.lblBMIOutput = New System.Windows.Forms.Label()
         Me.lblBMI = New System.Windows.Forms.Label()
+        Me.btnCalculate = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'lblTitle
@@ -93,11 +94,21 @@ Partial Class frmBMI
         Me.lblBMI.Size = New System.Drawing.Size(0, 16)
         Me.lblBMI.TabIndex = 6
         '
+        'btnCalculate
+        '
+        Me.btnCalculate.Location = New System.Drawing.Point(81, 248)
+        Me.btnCalculate.Name = "btnCalculate"
+        Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
+        Me.btnCalculate.TabIndex = 7
+        Me.btnCalculate.Text = "Calculate"
+        Me.btnCalculate.UseVisualStyleBackColor = True
+        '
         'frmBMI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(418, 293)
+        Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.lblBMI)
         Me.Controls.Add(Me.lblBMIOutput)
         Me.Controls.Add(Me.txtHeight)
@@ -119,4 +130,5 @@ Partial Class frmBMI
     Friend WithEvents txtHeight As TextBox
     Friend WithEvents lblBMIOutput As Label
     Friend WithEvents lblBMI As Label
+    Friend WithEvents btnCalculate As Button
 End Class
